@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "width": 283,
+  "height": 44,
+  "duration": 25.363488,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.018386,
+      "\u001b]0;root@iZ6we7em133ybuctp8r3eiZ:~/gnuc\u0007\u001b[?1034h[root@iZ6we7em133ybuctp8r3eiZ gnuc]# "
+    ],
+    [
+      17.579835,
+      "o"
+    ],
+    [
+      0.334736,
+      "b"
+    ],
+    [
+      1.957851,
+      "j"
+    ],
+    [
+      0.155359,
+      "d"
+    ],
+    [
+      0.172194,
+      "u"
+    ],
+    [
+      0.864495,
+      "m"
+    ],
+    [
+      0.269235,
+      "p "
+    ],
+    [
+      1.129251,
+      "-"
+    ],
+    [
+      0.154156,
+      "d"
+    ],
+    [
+      0.477787,
+      " "
+    ],
+    [
+      0.259895,
+      "m"
+    ],
+    [
+      0.186787,
+      "a"
+    ],
+    [
+      0.071948,
+      "i"
+    ],
+    [
+      0.153326,
+      "n"
+    ],
+    [
+      0.177359,
+      "\u0007-lib"
+    ],
+    [
+      1.396904,
+      "\r\n"
+    ],
+    [
+      0.003335,
+      "\r\nmain-lib:     file format elf64-x86-64\r\n\r\n\r\nDisassembly of section .init:\r\n\r\n00000000004003e0 <_init>:\r\n  4003e0:\t48 83 ec 08          \tsub    $0x8,%rsp\r\n  4003e4:\t48 8b 05 0d 0c 20 00 \tmov    0x200c0d(%rip),%rax        # 600ff8 <__gmon_start__>\r\n  4003eb:\t48 85 c0             \ttest   %rax,%rax\r\n  4003ee:\t74 05                \tje     4003f5 <_init+0x15>\r\n  4003f0:\te8 3b 00 00 00       \tcallq  400430 <__gmon_start__@plt>\r\n  4003f5:\t48 83 c4 08          \tadd    $0x8,%rsp\r\n  4003f9:\tc3                   \tretq   \r\n\r\nDisassembly of section .plt:\r\n\r\n0000000000400400 <.plt>:\r\n  400400:\tff 35 02 0c 20 00    \tpushq  0x200c02(%rip)        # 601008 <_GLOBAL_OFFSET_TABLE_+0x8>\r\n  400406:\tff 25 04 0c 20 00    \tjmpq   *0x200c04(%rip)        # 601010 <_GLOBAL_OFFSET_TABLE_+0x10>\r\n  40040c:\t0f 1f 40 00          \tnopl   0x0(%rax)\r\n\r\n0000000000400410 <printf@plt>:\r\n  400410:\tff 25 02 0c 20 00    \tjmpq   *0x200c02(%rip)        # 601018 <printf@GLIBC_2.2.5>\r\n  400416:\t68 00 00 00 00       \tpushq  $0x0\r\n  40041b:\te9 e0 ff ff ff"
+    ],
+    [
+      7e-05,
+      "       \tjmpq   400400 <.plt>\r\n\r\n0000000000400420 <__libc_start_main@plt>:\r\n  400420:\tff 25 fa 0b 20 00    \tjmpq   *0x200bfa(%rip)        # 601020 <__libc_start_main@GLIBC_2.2.5>\r\n  400426:\t68 01 00 00 00       \tpushq  $0x1\r\n  40042b:\te9 d0 ff ff ff       \tjmpq   400400 <.plt>\r\n\r\n0000000000400430 <__gmon_start__@plt>:\r\n  400430:\tff 25 f2 0b 20 00    \tjmpq   *0x200bf2(%rip)        # 601028 <__gmon_start__>\r\n  400436:\t68 02 00 00 00       \tpushq  $0x2\r\n  40043b:\te9 c0 ff ff ff       \tjmpq   400400 <.plt>\r\n\r\nDisassembly of section .text:\r\n\r\n0000000000400440 <_start>:\r\n  400440:\t31 ed                \txor    %ebp,%ebp\r\n  400442:\t49 89 d1             \tmov    %rdx,%r9\r\n  400445:\t5e                   \tpop    %rsi\r\n  400446:\t48 89 e2             \tmov    %rsp,%rdx\r\n  400449:\t48 83 e4 f0          \tand    $0xfffffffffffffff0,%rsp\r\n  40044d:\t50                   \tpush   %rax\r\n  40044e:\t54                   \tpush   %rsp\r\n  40044f:\t49 c7 c0 00 06 40 00 \tmov    $0x400600,%r8\r\n  400456:\t48 c7 c1 90 05 40 00 \tmov    $0x400590,%"
+    ],
+    [
+      5.9e-05,
+      "rcx\r\n  40045d:\t48 c7 c7 2d 05 40 00 \tmov    $0x40052d,%rdi\r\n  400464:\te8 b7 ff ff ff       \tcallq  400420 <__libc_start_main@plt>\r\n  400469:\tf4                   \thlt    \r\n  40046a:\t66 0f 1f 44 00 00    \tnopw   0x0(%rax,%rax,1)\r\n\r\n0000000000400470 <deregister_tm_clones>:\r\n  400470:\tb8 4f 10 60 00       \tmov    $0x60104f,%eax\r\n  400475:\t55                   \tpush   %rbp\r\n  400476:\t48 2d 48 10 60 00    \tsub    $0x601048,%rax\r\n  40047c:\t48 83 f8 0e          \tcmp    $0xe,%rax\r\n  400480:\t48 89 e5             \tmov    %rsp,%rbp\r\n  400483:\t77 02                \tja     400487 <deregister_tm_clones+0x17>\r\n  400485:\t5d                   \tpop    %rbp\r\n  400486:\tc3                   \tretq   \r\n  400487:\tb8 00 00 00 00       \tmov    $0x0,%eax\r\n  40048c:\t48 85 c0             \ttest   %rax,%rax\r\n  40048f:\t74 f4                \tje     400485 <deregister_tm_clones+0x15>\r\n  400491:\t5d                   \tpop    %rbp\r\n  400492:\tbf 48 10 60 00       \tmov    $0x601048,%edi\r\n  400497:\tff e0                \tjmpq   *%rax\r\n  400499:\t0f 1"
+    ],
+    [
+      3.6e-05,
+      "f 80 00 00 00 00 \tnopl   0x0(%rax)\r\n\r\n00000000004004a0 <register_tm_clones>:\r\n  4004a0:\tb8 48 10 60 00       \tmov    $0x601048,%eax\r\n  4004a5:\t55                   \tpush   %rbp\r\n  4004a6:\t48 2d 48 10 60 00    \tsub    $0x601048,%rax\r\n  4004ac:\t48 c1 f8 03          \tsar    $0x3,%rax\r\n  4004b0:\t48 89 e5             \tmov    %rsp,%rbp\r\n  4004b3:\t48 89 c2             \tmov    %rax,%rdx\r\n  4004b6:\t48 c1 ea 3f          \tshr    $0x3f,%rdx\r\n  4004ba:\t48 01 d0             \tadd    %rdx,%rax\r\n  4004bd:\t48 d1 f8             \tsar    %rax\r\n  4004c0:\t75 02                \tjne    4004c4 <register_tm_clones+0x24>\r\n  4004c2:\t5d                   \tpop    %rbp\r\n  4004c3:\tc3                   \tretq   \r\n  4004c4:\tba 00 00 00 00       \tmov    $0x0,%edx\r\n  4004c9:\t48 85 d2             \ttest   %rdx,%rdx\r\n  4004cc:\t74 f4                \tje     4004c2 <register_tm_clones+0x22>\r\n  4004ce:\t5d                   \tpop    %rbp\r\n  4004cf:\t48 89 c6             \tmov    %rax,%rsi\r\n  4004d2:\tbf 48 10 60 00       \tmov    $0x601048,%edi\r\n  4004d7:\tff "
+    ],
+    [
+      5.8e-05,
+      "e2                \tjmpq   *%rdx\r\n  4004d9:\t0f 1f 80 00 00 00 00 \tnopl   0x0(%rax)\r\n\r\n00000000004004e0 <__do_global_dtors_aux>:\r\n  4004e0:\t80 3d 5d 0b 20 00 00 \tcmpb   $0x0,0x200b5d(%rip)        # 601044 <_edata>\r\n  4004e7:\t75 11                \tjne    4004fa <__do_global_dtors_aux+0x1a>\r\n  4004e9:\t55                   \tpush   %rbp\r\n  4004ea:\t48 89 e5             \tmov    %rsp,%rbp\r\n  4004ed:\te8 7e ff ff ff       \tcallq  400470 <deregister_tm_clones>\r\n  4004f2:\t5d                   \tpop    %rbp\r\n  4004f3:\tc6 05 4a 0b 20 00 01 \tmovb   $0x1,0x200b4a(%rip)        # 601044 <_edata>\r\n  4004fa:\tf3 c3                \trepz retq \r\n  4004fc:\t0f 1f 40 00          \tnopl   0x0(%rax)\r\n\r\n0000000000400500 <frame_dummy>:\r\n  400500:\t48 83 3d 18 09 20 00 \tcmpq   $0x0,0x200918(%rip)        # 600e20 <__JCR_END__>\r\n  400507:\t00 \r\n  400508:\t74 1e                \tje     400528 <frame_dummy+0x28>\r\n  40050a:\tb8 00 00 00 00       \tmov    $0x0,%eax\r\n  40050f:\t48 85 c0             \ttest   %rax,%rax\r\n  400512:\t74 14                \tje     4"
+    ],
+    [
+      0.000106,
+      "00528 <frame_dummy+0x28>\r\n  400514:\t55                   \tpush   %rbp\r\n  400515:\tbf 20 0e 60 00       \tmov    $0x600e20,%edi\r\n  40051a:\t48 89 e5             \tmov    %rsp,%rbp\r\n  40051d:\tff d0                \tcallq  *%rax\r\n  40051f:\t5d                   \tpop    %rbp\r\n  400520:\te9 7b ff ff ff       \tjmpq   4004a0 <register_tm_clones>\r\n  400525:\t0f 1f 00             \tnopl   (%rax)\r\n  400528:\te9 73 ff ff ff       \tjmpq   4004a0 <register_tm_clones>\r\n\r\n000000000040052d <main>:\r\n  40052d:\t48 83 ec 08          \tsub    $0x8,%rsp\r\n  400531:\tb9 02 00 00 00       \tmov    $0x2,%ecx\r\n  400536:\tba 48 10 60 00       \tmov    $0x601048,%edx\r\n  40053b:\tbe 34 10 60 00       \tmov    $0x601034,%esi\r\n  400540:\tbf 3c 10 60 00       \tmov    $0x60103c,%edi\r\n  400545:\te8 25 00 00 00       \tcallq  40056f <addvec>\r\n  40054a:\t8b 15 fc 0a 20 00    \tmov    0x200afc(%rip),%edx        # 60104c <__TMC_END__+0x4>\r\n  400550:\t8b 35 f2 0a 20 00    \tmov    0x200af2(%rip),%esi        # 601048 <__TMC_END__>\r\n  400556:\tbf 20 06 40 00       \tmov    $0"
+    ],
+    [
+      3.5e-05,
+      "x400620,%edi\r\n  40055b:\tb8 00 00 00 00       \tmov    $0x0,%eax\r\n  400560:\te8 ab fe ff ff       \tcallq  400410 <printf@plt>\r\n  400565:\tb8 00 00 00 00       \tmov    $0x0,%eax\r\n  40056a:\t48 83 c4 08          \tadd    $0x8,%rsp\r\n  40056e:\tc3                   \tretq   \r\n\r\n000000000040056f <addvec>:\r\n  40056f:\tb8 00 00 00 00       \tmov    $0x0,%eax\r\n  400574:\teb 12                \tjmp    400588 <addvec+0x19>\r\n  400576:\t4c 63 c0             \tmovslq %eax,%r8\r\n  400579:\t46 8b 0c 86          \tmov    (%rsi,%r8,4),%r9d\r\n  40057d:\t46 03 0c 87          \tadd    (%rdi,%r8,4),%r9d\r\n  400581:\t46 89 0c 82          \tmov    %r9d,(%rdx,%r8,4)\r\n  400585:\t83 c0 01             \tadd    $0x1,%eax\r\n  400588:\t39 c8                \tcmp    %ecx,%eax\r\n  40058a:\t7c ea                \tjl     400576 <addvec+0x7>\r\n  40058c:\tf3 c3                \trepz retq \r\n  40058e:\t66 90                \txchg   %ax,%ax\r\n\r\n0000000000400590 <__libc_csu_init>:\r\n  400590:\t41 57                \tpush   %r15\r\n  400592:\t41 89 ff             \tmov    %edi,%r15d\r\n  400595"
+    ],
+    [
+      2.1e-05,
+      ":\t41 56                \tpush   %r14\r\n  400597:\t49 89 f6             \tmov    %rsi,%r14\r\n  40059a:\t41 55                \tpush   %r13\r\n  40059c:\t49 89 d5             \tmov    %rdx,%r13\r\n  40059f:\t41 54                \tpush   %r12\r\n  4005a1:\t4c 8d 25 68 08 20 00 \tlea    0x200868(%rip),%r12        # 600e10 <__frame_dummy_init_array_entry>\r\n  4005a8:\t55                   \tpush   %rbp\r\n  4005a9:\t48 8d 2d 68 08 20 00 \tlea    0x200868(%rip),%rbp        # 600e18 <__init_array_end>\r\n  4005b0:\t53                   \tpush   %rbx\r\n  4005b1:\t4c 29 e5             \tsub    %r12,%rbp\r\n  4005b4:\t31 db                \txor    %ebx,%ebx\r\n  4005b6:\t48 c1 fd 03          \tsar    $0x3,%rbp\r\n  4005ba:\t48 83 ec 08          \tsub    $0x8,%rsp\r\n  4005be:\te8 1d fe ff ff       \tcallq  4003e0 <_init>\r\n  4005c3:\t48 85 ed             \ttest   %rbp,%rbp\r\n  4005c6:\t74 1e                \tje     4005e6 <__libc_csu_init+0x56>\r\n  4005c8:\t0f 1f 84 00 00 00 00 \tnopl   0x0(%rax,%rax,1)\r\n  4005cf:\t00 \r\n  4005d0:\t4c 89 ea             \tmov    %r13,%rdx\r\n  4005"
+    ],
+    [
+      3.2e-05,
+      "d3:\t4c 89 f6             \tmov    %r14,%rsi\r\n  4005d6:\t44 89 ff             \tmov    %r15d,%edi\r\n  4005d9:\t41 ff 14 dc          \tcallq  *(%r12,%rbx,8)\r\n  4005dd:\t48 83 c3 01          \tadd    $0x1,%rbx\r\n  4005e1:\t48 39 eb             \tcmp    %rbp,%rbx\r\n  4005e4:\t75 ea                \tjne    4005d0 <__libc_csu_init+0x40>\r\n  4005e6:\t48 83 c4 08          \tadd    $0x8,%rsp\r\n  4005ea:\t5b                   \tpop    %rbx\r\n  4005eb:\t5d                   \tpop    %rbp\r\n  4005ec:\t41 5c                \tpop    %r12\r\n  4005ee:\t41 5d                \tpop    %r13\r\n  4005f0:\t41 5e                \tpop    %r14\r\n  4005f2:\t41 5f                \tpop    %r15\r\n  4005f4:\tc3                   \tretq   \r\n  4005f5:\t90                   \tnop\r\n  4005f6:\t66 2e 0f 1f 84 00 00 \tnopw   %cs:0x0(%rax,%rax,1)\r\n  4005fd:\t00 00 00 \r\n\r\n0000000000400600 <__libc_csu_fini>:\r\n  400600:\tf3 c3                \trepz retq \r\n\r\nDisassembly of section .fini:\r\n\r\n0000000000400604 <_fini>:\r\n  400604:\t48 83 ec 08          \tsub    $0x8,%rsp\r\n  400608:\t48 83 c4 08        "
+    ],
+    [
+      2.9e-05,
+      "  \tadd    $0x8,%rsp\r\n  40060c:\tc3                   \tretq   \r\n\u001b]0;root@iZ6we7em133ybuctp8r3eiZ:~/gnuc\u0007[root@iZ6we7em133ybuctp8r3eiZ gnuc]# "
+    ]
+  ]
+}
