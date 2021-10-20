@@ -1,0 +1,13 @@
+target("array-struct-union")
+    set_kind("binary")
+    set_optimize("none")
+    set_symbols("debug")
+    set_targetdir(".")
+    add_files("array-struct-union.c")
+
+target("data-place")
+    set_kind("binary")
+    set_optimize("none")
+    set_symbols("debug")
+    set_targetdir(".")
+    add_files("data-place.c", "data-place-func.c")
