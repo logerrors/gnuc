@@ -5,3 +5,4 @@ services:
     volumes:
       - /home/wuxing/workspace/gnuc:/workspace
     tty: true
+    privileged: true
