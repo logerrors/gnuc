@@ -23,3 +23,9 @@ switch.s: switch.c
 
 switch-simp.s: switch-simp.c
 	gcc -Og -S switch-simp.c
+
+call-params.s: call-params.c
+	gcc -Og -S call-params.c
+
+call-params: call-params.c
+	gcc -Og -g call-params.c -o call-params
