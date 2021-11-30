@@ -29,3 +29,18 @@ call-params.s: call-params.c
 
 call-params: call-params.c
 	gcc -Og -g call-params.c -o call-params
+
+static-local.o: static-local.c
+	gcc -Og -c $<
+
+main-lib2.o: main-lib2.c
+	gcc -Og -c $<
+
+main-lib2.s: main-lib2.c vector
+	gcc -Og -s main-lib2.c vector.c
+
+libvector2.so: addvec2.c multvec.c
+	gcc --shared -fPIC -Og addvec2.c multvec.c -o libvector2.so
+
+main-lib-shared2: main-lib2.o libvector2.so
+	gcc -Og -o main-lib-shared2 main-lib2.o -L. -l vector2
